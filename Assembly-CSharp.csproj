@@ -90,7 +90,6 @@
      <Compile Include="Assets\GoogleVR\Scripts\UI\IGvrGazeResponder.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrFPS.cs" />
      <Compile Include="Assets\GoogleVR\Scripts\Utilities\GvrIntent.cs" />
-     <Compile Include="Assets\MyScripts\ReCalcCubeTexture.cs" />
      <Compile Include="Assets\Udacity\Scripts\Coin.cs" />
      <Compile Include="Assets\Udacity\Scripts\DieAfterSeconds.cs" />
      <Compile Include="Assets\Udacity\Scripts\Door.cs" />
@@ -111,7 +110,7 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="Google.ProtocolBuffers">
- <HintPath>D:/Dropbox/different/VR/Nanodegree/course3/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
+ <HintPath>D:/VR/Nanodegree/course3/Assets/Plugins/Google.ProtocolBuffers.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
