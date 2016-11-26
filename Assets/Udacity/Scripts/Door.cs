@@ -13,6 +13,7 @@ public class Door : MonoBehaviour
 
     public void Unlock()
     {
+    	Debug.Log ("door is unlocked");
         // You'll need to set "locked" to true here
     }
 }
