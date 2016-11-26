@@ -8,6 +8,9 @@ public class Door : MonoBehaviour
     private bool locked = true; 
     private bool open = false;
 
+    public AudioSource doorAudioSource;
+    public AudioClip[] doorSoundFiles; 
+
     void Update() {
         // If the door is unlocked and it is not fully raised
             // Animate the door raising up
@@ -28,8 +31,12 @@ public class Door : MonoBehaviour
     public void onDoorClicked(){
     	if(!locked){
     		open = true;
+    		doorAudioSource.clip = doorSoundFiles[1];
+    		doorAudioSource.Play();
     	} else{
     		Debug.Log("You Should Find A Key!");
+    		doorAudioSource.clip = doorSoundFiles[0];
+    		doorAudioSource.Play();
     	}
     }
 }
