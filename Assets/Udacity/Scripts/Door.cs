@@ -9,7 +9,9 @@ public class Door : MonoBehaviour
     private bool open = false;
 
     public AudioSource doorAudioSource;
-    public AudioClip[] doorSoundFiles; 
+    public AudioClip[] doorSoundFiles;
+
+    public GameObject findAKeyMessage; 
 
     void Update() {
         // If the door is unlocked and it is not fully raised
@@ -37,6 +39,8 @@ public class Door : MonoBehaviour
     		Debug.Log("You Should Find A Key!");
     		doorAudioSource.clip = doorSoundFiles[0];
     		doorAudioSource.Play();
+
+    		Object.Instantiate(findAKeyMessage, transform.position, Quaternion.Euler(-45, 0, 0));
     	}
     }
 }
