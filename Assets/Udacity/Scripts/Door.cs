@@ -40,7 +40,10 @@ public class Door : MonoBehaviour
     		doorAudioSource.clip = doorSoundFiles[0];
     		doorAudioSource.Play();
 
-    		Object.Instantiate(findAKeyMessage, transform.position, Quaternion.Euler(-45, 0, 0));
+    		Vector3 messagePosition = transform.position;
+    		messagePosition.z += -1;
+
+    		Object.Instantiate(findAKeyMessage, messagePosition, Quaternion.Euler(-20, 0, 0));
     	}
     }
 }
