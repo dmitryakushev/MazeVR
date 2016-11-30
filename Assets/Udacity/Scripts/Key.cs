@@ -7,6 +7,7 @@ public class Key : MonoBehaviour
     //Create a reference to the KeyPoofPrefab and Door
     public GameObject objectToReplaceKey;
     public GameObject doorToUnlock;
+	public bool isCollected = false;
 
 	void Update()
 	{
@@ -21,6 +22,8 @@ public class Key : MonoBehaviour
         
         // Call the Unlock() method on the Door
         //I call the Unlock() methode VIA event trigger in Unity.
+
+		isCollected = true;
         
         // Destroy the key. Check the Unity documentation on how to use Destroy
         Destroy(gameObject);
