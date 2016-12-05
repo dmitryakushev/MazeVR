@@ -1,19 +1,19 @@
 # MazeVR
-This is a learning project for the course3 of Udacity VR Nanodegree.
+This is a learning project for the course3 of [Udacity VR Nanodegree](https://www.udacity.com/course/vr-developer-nanodegree--nd017).
 
-##Installing
-**Variant1:**
-1. download the whole project to your local machine
-2. open the project in Unity;
-3. build _Maze_ scene to your phone.
+##Installing the apk
+Download **Course3.apk** and install it to your Android phone.
+
+##Installing the project
+**Variant1:** Clone the whole repository to your local machine
 
 **Variant2:**
-1. download DmitryYakushev_Project3.unitypackage file;
-2. create a new project in Unity;
-3. import the Google VR SDK package to your project;
-4. import DmitryYakushev_Project3.unitypackage file to your project;
-5. сonfigure the project and build settings for VR.
-6. build _Maze_ scene to your phone. 
+
+1. Download DmitryYakushev_Project3.unitypackage file;
+2. Create a new project in Unity;
+3. Import the Google VR SDK package to your project;
+4. Import DmitryYakushev_Project3.unitypackage file to your project;
+5. Configure the project and build settings for VR.
 
 ##How to play
 * Launch the application on your phone;
